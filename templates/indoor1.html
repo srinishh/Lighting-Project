@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    
+  {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Rk's Justled Company Bangalore</title>
+  <meta name="description" content="Rk's Justled Company Bangalore, the best leading provider of modern LED lighting solutions, serving clients across Bangalore and India.">
+  <meta name="keywords" content="LED lighting Bangalore, LED street lights, modern LED poles, outdoor lighting, LED manufacturer India, energy efficient lights, RK JustLED">
+
+  <!-- Favicons -->
+  {% load static %}
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  {% load static %}
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  {% load static %}
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  {% load static %}
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+  <link href="{% static 'css/styles.css' %}" rel="stylesheet">   
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <b><i class="bi bi-envelope d-flex align-items-center"><a href="mailto:justled500@gmail.com">justled500@gmail.com</a></i></b>
+          <b><i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 7890099000</span></i></b>
+        </div>
+
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://www.linkedin.com/in/rk-s-just-led-a39a23383/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/rk_justled/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+         </div>
+       
+        </div>
+    </div><!-- End Top Bar -->
+
+
+<div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          
+           <img src="{% static 'img/JustLed_Final logo.jpg' %}" alt="Rk's Justled Company Bangalore"> 
+        </a>
+
+         <nav id="navmenu" class="navmenu">
+          <ul>
+           
+            <li><img src="{% static 'img/fancydesign5.png' %}" alt="Rk's Justled Company Bangalore"></li>
+            <li><a href="index.html#hero" class="active">Home<br></a></li>
+            <li><a href="index.html#aboutus">About Us</a></li>
+            <!-- Products -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="toggleProductBar()">Products</a>
+                </li>
+            <li><a href="index.html#products">Downloads</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+       
+            <li><img src="{% static 'img/fancydesign4.png' %}" alt="Rk's Justled Company Bangalore"></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+     </div>
+    </div>
+    <!-- Bottom Submenu Bar -->
+<div id="productBar">
+    <div class="submenu-right">
+        <a href="indoor.html">| Indoor |</a>
+        <a href="outdoor.html"> Outdoor | </a>
+        <a href="poles.html"> Poles |</a>
+    </div>
+</div>
+
+<!-- Script -->
+<script>
+    function toggleProductBar() {
+        let bar = document.getElementById("productBar");
+
+        if (bar.style.display === "block") {
+            bar.style.display = "none";
+        } else {
+            bar.style.display = "block";
+        }
+    }
+</script>
+
+    
+  </header>
+
+ <br><br>   <br><br>
+
+ <main class="main">
+
+
+<section id="customized-hangings">
+
+ <div class="container mt-4">
+
+    <h3 style="color:orange;"><b>Customized Hangings:</b></h3> 
+
+    <br><br>
+
+    <div class="row">
+
+        <!-- Repeat this block for 12 images -->
+        
+        <!-- Image 1 -->
+        <div class="col-md-3 gallery-item">
+            <img src="assets/img/off_light.gif" 
+                 data-hover="assets/img/on_light.gif"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Indoor Lights</div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="col-md-3 gallery-item">
+            <img src="img2.jpg" data-hover="img2-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Outdoor Lights</div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="col-md-3 gallery-item">
+            <img src="img3.jpg" data-hover="img3-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Poles</div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="col-md-3 gallery-item">
+            <img src="img4.jpg" data-hover="img4-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">LED Panels</div>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="col-md-3 gallery-item">
+            <img src="img5.jpg" data-hover="img5-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Street Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img6.jpg" data-hover="img6-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Garden Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img7.jpg" data-hover="img7-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Flood Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img8.jpg" data-hover="img8-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Ceiling Lights</div>
+        </div>
+
+        <!-- ROW 3 -->
+        <div class="col-md-3 gallery-item">
+            <img src="img9.jpg" data-hover="img9-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Wall Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img10.jpg" data-hover="img10-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Solar Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img11.jpg" data-hover="img11-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Decor Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img12.jpg" data-hover="img12-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Industrial Lights</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+function changeImage(img) {
+    img.dataset.original = img.src;
+    img.src = img.getAttribute("data-hover");
+}
+
+function resetImage(img) {
+    img.src = img.dataset.original;
+}
+</script>
+</section>
+
+
+<section id="wall-art">
+
+<h3 style="color:orange;"><b>Wall Art:</b></h3> 
+
+ <br><br>
+
+ <div class="container mt-4">
+    <div class="row">
+
+        <!-- Repeat this block for 12 images -->
+        
+        <!-- Image 1 -->
+        <div class="col-md-3 gallery-item">
+            <img src="img1.jpg" 
+                 data-hover="img1-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Indoor Lights</div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="col-md-3 gallery-item">
+            <img src="img2.jpg" data-hover="img2-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Outdoor Lights</div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="col-md-3 gallery-item">
+            <img src="img3.jpg" data-hover="img3-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Poles</div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="col-md-3 gallery-item">
+            <img src="img4.jpg" data-hover="img4-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">LED Panels</div>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="col-md-3 gallery-item">
+            <img src="img5.jpg" data-hover="img5-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Street Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img6.jpg" data-hover="img6-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Garden Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img7.jpg" data-hover="img7-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Flood Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img8.jpg" data-hover="img8-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Ceiling Lights</div>
+        </div>
+
+        <!-- ROW 3 -->
+        <div class="col-md-3 gallery-item">
+            <img src="img9.jpg" data-hover="img9-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Wall Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img10.jpg" data-hover="img10-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Solar Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img11.jpg" data-hover="img11-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Decor Lights</div>
+        </div>
+
+        <div class="col-md-3 gallery-item">
+            <img src="img12.jpg" data-hover="img12-hover.jpg"
+                 class="gallery-img"
+                 onmouseover="changeImage(this)"
+                 onmouseout="resetImage(this)">
+            <div class="gallery-title">Industrial Lights</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+function changeImage(img) {
+    img.dataset.original = img.src;
+    img.src = img.getAttribute("data-hover");
+}
+
+function resetImage(img) {
+    img.src = img.dataset.original;
+}
+</script>
+</section>
+
+
+   </main>
+
+   <br><br> 
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">           
+                <span class="sitename" class="fw-bold">Rk Justled Company Bangalore</span></a>
+          <p class="fw-bold">the best leading provider of modern LED lighting solutions, serving clients across Bangalore and India.</p>
+         </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#aboutus">About Us</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="index.html#products">Downloads</a></li>
+            <li><a href="index.html#products">Contacts</a></li>
+             </ul>
+        </div>
+
+         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Address</h4>
+          <p>SYNO 21 PHASE 7,CHIKKALLURU</p>
+          <p>VENKATAPURA VILLAGE TAVARAKERE,</p>
+          <p>HOBLI RAMAOHALLI,BANGALORE URBAN,</p>
+          <p>KARNATAKA,560074</p> 
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 7890099000</span></p>
+          <p><strong>Email:</strong> <span>justled500@gmail.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Rk Justled Company Bangalore</strong> <span>All Rights Reserved 2026-2027</span></p>
+      
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader 
+  <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

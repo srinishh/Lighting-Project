@@ -1,0 +1,208 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Indoor Products - RK JustLED</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+    <style>
+
+        body{
+            background:#f5f5f5;
+        }
+
+        .page-title{
+            text-align:center;
+            margin-top:40px;
+            margin-bottom:40px;
+            font-weight:bold;
+            color:orange;
+        }
+
+        .product-card{
+            background:white;
+            border-radius:10px;
+            padding:15px;
+            transition:0.3s;
+            height:100%;
+        }
+
+        .product-card:hover{
+            transform:translateY(-5px);
+            box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .product-image{
+            height:250px;
+            width:100%;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .product-name{
+            margin-top:15px;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        .product-price{
+            color:green;
+            font-size:18px;
+            font-weight:bold;
+        }
+
+        .view-btn{
+            background:orange;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            text-decoration:none;
+        }
+
+        .view-btn:hover{
+            background:black;
+            color:white;
+        }
+
+        .top-navbar{
+            background:black;
+            padding:15px;
+        }
+
+        .top-navbar a{
+            color:white;
+            text-decoration:none;
+            margin-right:20px;
+            font-weight:bold;
+        }
+
+        .top-navbar a:hover{
+            color:orange;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="top-navbar">
+
+        <a href="{% url 'home' %}">Home</a>
+
+        <a href="{% url 'indoor' %}">Indoor</a>
+
+        <a href="{% url 'outdoor' %}">Outdoor</a>
+
+        <a href="{% url 'poles' %}">Poles</a>
+
+        <a href="{% url 'contact' %}">Contact</a>
+
+    </div>
+
+    <!-- Page Title -->
+
+    <h1 class="page-title">
+        Indoor Lighting Products
+    </h1>
+
+    <!-- Products -->
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            {% for product in products %}
+
+            <div class="col-md-4 col-lg-3">
+
+                <div class="product-card text-center">
+
+                    <!-- Product Image -->
+
+                    <img src="{{ product.image.url }}"
+                         class="product-image"
+                         alt="{{ product.name }}">
+
+                    <!-- Product Name -->
+
+                    <div class="product-name">
+                        {{ product.name }}
+                    </div>
+
+                    <!-- Product Price -->
+
+                    <div class="product-price">
+                        ₹{{ product.price }}
+                    </div>
+
+                    <p class="mt-2">
+                        {{ product.description|truncatewords:10 }}
+                    </p>
+
+                    <p>
+                        <b>Stock:</b> {{ product.stock }}
+                    </p>
+
+                    <!-- Button -->
+
+                    <a href="{% url 'product_detail' product.id %}"
+                       class="view-btn">
+
+                        View Product
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            {% empty %}
+
+            <div class="text-center">
+
+                <h3>No Indoor Products Available</h3>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <!-- Footer -->
+
+    <footer class="text-center bg-dark text-white p-4">
+
+        <h5>RK JustLED Company Bangalore</h5>
+
+        <p>
+            Modern LED Lighting Solutions
+        </p>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

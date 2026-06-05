@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    
+  {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Rk's Justled Company Bangalore</title>
+  <meta name="description" content="Rk's Justled Company Bangalore, the best leading provider of modern LED lighting solutions, serving clients across Bangalore and India.">
+  <meta name="keywords" content="LED lighting Bangalore, LED street lights, modern LED poles, outdoor lighting, LED manufacturer India, energy efficient lights, RK JustLED">
+
+  <!-- Favicons -->
+  {% load static %}
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  {% load static %}
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  {% load static %}
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  {% load static %}
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+  <link href="{% static 'css/styles.css' %}" rel="stylesheet">   
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <b><i class="bi bi-envelope d-flex align-items-center"><a href="mailto:justled500@gmail.com">justled500@gmail.com</a></i></b>
+          <b><i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 7890099000</span></i></b>
+        </div>
+
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://www.linkedin.com/in/rk-s-just-led-a39a23383/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/rk_justled/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+         </div>
+       
+        </div>
+    </div><!-- End Top Bar -->
+
+
+<div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          
+           <img src="{% static 'img/JustLed_Final logo.jpg' %}" alt="Rk's Justled Company Bangalore"> 
+        </a>
+
+         <nav id="navmenu" class="navmenu">
+          <ul>
+           
+            <li><img src="{% static 'img/fancydesign5.png' %}" alt="Rk's Justled Company Bangalore"></li>
+            <li><a href="#hero" class="active">Home<br></a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <!-- Products -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#products" onclick="toggleProductBar()">Products</a>
+                </li>
+            <li><a href="#products">Downloads</a></li>
+            <li><a href="#footer">Contact</a></li>
+       
+            <li><img src="{% static 'img/fancydesign4.png' %}" alt="Rk's Justled Company Bangalore"></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+     </div>
+    </div>
+    <!-- Bottom Submenu Bar -->
+<div id="productBar">
+    <div class="submenu-right">
+        <a href="#">| Indoor |</a>
+        <a href="#"> Outdoor | </a>
+        <a href="#"> Poles |</a>
+    </div>
+</div>
+
+<!-- Script -->
+<script>
+    function toggleProductBar() {
+        let bar = document.getElementById("productBar");
+
+        if (bar.style.display === "block") {
+            bar.style.display = "none";
+        } else {
+            bar.style.display = "block";
+        }
+    }
+</script>
+
+    
+  </header>
+
+  <main class="main">
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section accent-background">
+
+    
+     <div class="container-fluid p-0">
+
+    <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+
+    <!-- SLIDE 1 -->
+    <div class="carousel-item active">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="{% static 'img/video1.mp4' %}" type="video/mp4">
+        </video>
+        <div class="carousel-caption">
+          <h2>Lighting Your World Starts Here</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="carousel-item">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="{% static 'img/video2.mp4' %}" type="video/mp4">
+        </video>
+        <div class="carousel-caption">
+          <h2>Upgrade to Smarter Lighting</h2>
+        </div>
+      </div>
+    </div>
+
+  
+
+<!-- SLIDE 3 -->
+    <div class="carousel-item active">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="{% static 'img/video3.mp4' %}" type="video/mp4">
+        </video>
+        <div class="carousel-caption">
+          <h2>Where Ideas Turn Into Reality</h2>
+        </div>
+      </div>
+    </div>
+
+</div>
+  <!-- CONTROLS -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+  </div>
+
+  </section><!-- /Hero Section -->
+
+
+    <!-- About Us Section -->
+
+    
+<section id="aboutus" class="about-section">
+
+   <div><img src="{% static 'img/fancydesign21.png' %}" alt="Rk's Justled Company Bangalore"></div>
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="text-center mb-5">
+            <h2 class="about-title">About <span class="highlight">RK’s JustLED</span></h2>
+            <p class="text-muted">Innovative LED Lighting Solutions for Modern Infrastructure</p>
+        </div>
+
+        <!-- Content -->
+        <div class="row align-items-center">
+
+            <!-- Image -->
+            <div class="col-md-6 mb-4">
+                <img src="{% static 'img/mainimage.png' %}"
+                     class="img-fluid rounded shadow"
+                     alt="LED Lighting">
+            </div>
+
+            <!-- Text -->
+            <div class="col-md-6">
+                <p class="about-text">
+                    <strong>RK JustLED Company</strong> is a leading provider of modern LED lighting solutions,
+                    serving clients across Bangalore and India. The company specializes in designing
+                    energy-efficient, durable, and aesthetically appealing lighting products.
+                </p>
+
+                <p class="about-text">
+                    With a strong commitment to innovation and quality, RK JustLED manufactures
+                    a wide range of products including street light poles, garden lighting,
+                    architectural poles, and indoor LED fixtures.
+                </p>
+
+                <p class="about-text">
+                    Our mission is to deliver <span class="highlight">eco-friendly, cost-effective,
+                    and high-performance lighting solutions</span> that enhance urban and commercial spaces.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Features -->
+        <div class="row mt-5 text-center">
+
+            <div class="col-md-3 mb-4">
+                <div class="feature-box">
+                    <div class="feature-icon">💡</div>
+                    <h5>Energy Efficient</h5>
+                    <p class="small text-muted">Advanced LED technology with low power consumption.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="feature-box">
+                    <div class="feature-icon">🏗️</div>
+                    <h5>Modern Designs</h5>
+                    <p class="small text-muted">Stylish and innovative lighting structures.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="feature-box">
+                    <div class="feature-icon">🌱</div>
+                    <h5>Eco-Friendly</h5>
+                    <p class="small text-muted">Sustainable and environment-friendly solutions.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="feature-box">
+                    <div class="feature-icon">⚡</div>
+                    <h5>High Performance</h5>
+                    <p class="small text-muted">Reliable and long-lasting lighting products.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+  
+     <!-- /About Us Section -->
+
+    <!-- Products Section -->
+    <section id="products" class="products-section py-5">
+
+    <div class="container">
+
+        <h2 class="text-center fw-bold mb-5" style="color:blue;">
+            Our LED Products
+        </h2>
+
+        <div class="row g-4 justify-content-center">
+
+            {% for product in products %}
+
+            <div class="col-md-4 col-sm-6">
+
+                <div class="product-card text-center p-3 shadow rounded h-100">
+
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img src="{{ product.image.url }}"
+                             class="img-fluid rounded"
+                             alt="{{ product.name }}">
+                    </a>
+
+                    <h4 class="mt-3">
+                        {{ product.name }}
+                    </h4>
+
+                    <p class="fw-bold text-dark">
+                        ₹{{ product.price }}
+                    </p>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+  
+<!--/Products Section -->
+
+<section class="video-gallery py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Popular LED Products</h2>
+
+        <div class="row g-4">
+
+            <!-- Video 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="video-box">
+                    <video autoplay muted loop playsinline>
+                        <source src="{% static 'img/p5.mp4' %}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="video-box">
+                    <video autoplay muted loop playsinline>
+                        <source src="{% static 'img/p3.mp4' %}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="video-box">
+                    <video autoplay muted loop playsinline>
+                        <source src="{% static 'img/p4.mp4' %}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Add more videos same way -->
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="clients-section">
+
+    <div><span><img src="{% static 'img/fancydesign3.png' %}" style="float:left;" alt="Rk Justled Company Bangalore">
+
+    <img src="{% static 'img/fancydesign3.png' %}" style="float:right;" alt="Rk Justled Company Bangalore"></span></div>
+
+    <div class="container">
+
+        <h2 class="section-title" class="fw-bold" style="color:blue;">Our Clients</h2>
+
+        <!-- ROW 1 -->
+        <div class="row g-4 mb-4">
+
+            <div class="col-md-3 col-6">
+                <div class="client-card">
+                    <img src="{% static 'img/client1.png' %}" class="client-logo">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="client-card">
+                    <img src="{% static 'img/client2.png' %}" class="client-logo">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="client-card">
+                    <img src="{% static 'img/client3.png' %}" class="client-logo">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="client-card">
+                    <img src="{% static 'img/client4.png' %}" class="client-logo">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="row g-4">
+
+            <div class="col-md-3 col-6">
+                <div class="client-card">
+                    <img src="{% static 'img/client5.png' %}" class="client-logo">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="client-card">
+                    <img src="{% static 'img/client6.png' %}" class="client-logo">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="client-card">
+                    <img src="{% static 'img/client7.png' %}" class="client-logo">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="client-card">
+                    <img src="{% static 'img/client8.png' %}" class="client-logo">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div><img src="{% static 'img/fancydesign22.png' %}" style="float:right;" alt="Rk's Justled Company Bangalore"></div>
+</section>
+
+   </main>
+
+   <br><br> 
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">           
+                <span class="sitename" class="fw-bold">Rk Justled Company Bangalore</span></a>
+          <p class="fw-bold">the best leading provider of modern LED lighting solutions, serving clients across Bangalore and India.</p>
+         </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#products">Downloads</a></li>
+            <li><a href="#footer">Contacts</a></li>
+             </ul>
+        </div>
+
+         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Address</h4>
+          <p>SYNO 21 PHASE 7,CHIKKALLURU</p>
+          <p>VENKATAPURA VILLAGE TAVARAKERE,</p>
+          <p>HOBLI RAMAOHALLI,BANGALORE URBAN,</p>
+          <p>KARNATAKA,560074</p> 
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 7890099000</span></p>
+          <p><strong>Email:</strong> <span>justled500@gmail.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Rk Justled Company Bangalore</strong> <span>All Rights Reserved 2026-2027</span></p>
+      
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader 
+  <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

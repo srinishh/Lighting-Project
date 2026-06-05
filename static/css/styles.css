@@ -1,0 +1,411 @@
+
+/* ===== COURSE CARD STYLES ===== */
+.course-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== COURSE IMAGE ===== */
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;   /* prevents image distortion */
+  padding: 15px;
+  background: #f8f9fa;
+}
+
+/* ===== COURSE TITLE ===== */
+.course-card h5 {
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+
+/* ===== DIPLOMA COURSE CARD ===== */
+.diploma-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.diploma-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== COURSE IMAGE ===== */
+.diploma-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;   /* good for diploma banners */
+  background: #f8f9fa;
+}
+
+/* ===== COURSE TITLE ===== */
+.diploma-card h5 {
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ffc107;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #ffb300;
+    color: #000;
+}
+
+
+/* ===== SLIDER STYLES ===== */
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    display: block;
+    margin: 20px auto;
+}
+
+ @media (max-width: 768px) {
+            .carousel-item img {
+                height: 180px;
+            }
+        }
+
+
+
+/* ===== CORPORATE SECTION STYLES===== */
+
+/* MAIN CONTAINER */
+.offerings-container{
+    max-width:1200px;
+    margin:50px auto;
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+/* LEFT IMAGE */
+.left img{
+    width:820px;   /* Big corporate image */
+    max-width:100%;
+    border-radius:18px;
+    box-shadow:0 20px 45px rgba(0,0,0,0);
+}
+
+/* Right Content */
+.right h4{
+     margin-bottom:25px;
+}
+
+/* RIGHT ICON LIST */
+.right ul{
+    list-style:none;
+    padding:0;
+}
+
+/* EACH ICON ROW */
+.right li{
+    margin-bottom:25px;
+    display:flex;
+    align-items:center;
+}
+
+/* ROUND ICON CIRCLE */
+.icon-circle{
+    width:230px;
+    height:auto;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 12px 30px rgba(0,0,0,0);
+    transition:0.3s ease;
+}
+
+/* ICON IMAGE SIZE */
+.icon-circle img{
+    width:200px;
+    height:100px;
+}
+
+/* HOVER EFFECT */
+.icon-circle:hover{
+    transform:scale(1.08);
+}
+
+
+
+/* ===== ABOUT US SECTION STYLES===== */
+
+
+    .about-section {
+            padding: 80px 0;
+        }
+
+        .about-title {
+            font-weight: bold;
+            font-size: 36px;
+            color: #222;
+        }
+
+        .highlight {
+            color: #ff9800;
+        }
+
+        .about-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .feature-box {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            color: #ff9800;
+            margin-bottom: 10px;
+        }
+
+
+
+
+/* ===== PRODUCTS SECTION STYLES===== */
+
+.products-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .product-card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            background: #fff;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 15px;
+            text-align: center;
+        }
+
+
+/* ===== CLIENTS SECTION STYLES===== */
+
+.clients-section {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
+        .client-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0);
+        }
+
+        .client-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .client-logo {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        .client-logo:hover {
+            filter: grayscale(0%);
+        }
+
+
+
+/* ===== VIDEOS SLIDER SECTION STYLES===== */
+
+
+/* VIDEO BANNER */
+.video-banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* KEY for alignment */
+}
+
+/* Center text properly */
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+/* ===== POPULAR PRODUCTS SECTION STYLES===== */
+
+.video-gallery h2 {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Video Box */
+.video-box {
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+/* Video Styling */
+.video-box video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Hover Effect */
+.video-box:hover video {
+    transform: scale(1.1);
+}
+
+
+
+
+  /* Submenu bar */
+        #productBar {
+            display: none;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+            padding: 10px 10px;
+        }
+
+        .submenu-right {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .submenu-right a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .submenu-right a:hover {
+            color: #007bff;
+        }
+
+
+
+
+
+.custom-hr {
+    border: 5px;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+.gallery-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: 0.4s ease;
+    }
+
+    .gallery-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .gallery-title {
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 500;
+    }
