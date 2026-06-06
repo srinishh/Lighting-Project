@@ -1,4 +1,4 @@
-mysqlclient==2.2.0
+mysqlclient==2.2.4
 Pillow>=11.2.1
 django-crispy-forms==2.1
 django-filter==23.5
