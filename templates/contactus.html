@@ -68,14 +68,14 @@
           <ul>
            
             <li><img src="{% static 'img/fancydesign5.png' %}" alt="Rk's Justled Company Bangalore"></li>
-            <li><a href="index.html#hero" class="active">Home<br></a></li>
-            <li><a href="index.html#aboutus">About Us</a></li>
+            <li><a href="{% url 'home' %}" class="active">Home<br></a></li>
+            <li><a href="{% url 'home' %}#aboutus">About Us</a></li>
             <!-- Products -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="toggleProductBar()">Products</a>
+                    <a class="nav-link" href="{% url 'home' %}#products" onclick="toggleProductBar()">Products</a>
                 </li>
-            <li><a href="index.html#products">Downloads</a></li>
-            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="{% url 'home' %}#products">Downloads</a></li>
+            <li><a href="#">Contact</a></li>
        
             <li><img src="{% static 'img/fancydesign4.png' %}" alt="Rk's Justled Company Bangalore"></li>
           </ul>
@@ -249,7 +249,7 @@ KARNATAKA,560074</h5>
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">           
+          <a href="{% url 'home' %}" class="logo d-flex align-items-center">           
                 <span class="sitename" class="fw-bold">Rk Justled Company Bangalore</span></a>
           <p class="fw-bold">the best leading provider of modern LED lighting solutions, serving clients across Bangalore and India.</p>
          </div>
@@ -257,11 +257,11 @@ KARNATAKA,560074</h5>
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="index.html#hero">Home</a></li>
-            <li><a href="index.html#aboutus">About Us</a></li>
-            <li><a href="index.html#products">Products</a></li>
-            <li><a href="index.html#products">Downloads</a></li>
-            <li><a href="index.html#products">Contacts</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'home' %}#aboutus">About Us</a></li>
+            <li><a href="{% url 'home' %}#products">Products</a></li>
+            <li><a href="{% url 'home' %}#products">Downloads</a></li>
+            <li><a href="#">Contacts</a></li>
              </ul>
         </div>
 
