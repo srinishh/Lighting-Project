@@ -23,18 +23,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m$xc6e8n20!%n+(a_2km5=+@!2b%^p6_*2a6ut-7-6kn&h46o3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True 
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'lighting-project-1.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
 
-
-# ALLOWED_HOSTS = [
-#     'lighting-project-1.onrender.com',
-# ]
-
-# CSRF_TRUSTED_ORIGINS = [
-#     'https://lighting-project-1.onrender.com',
-# ]
+CSRF_TRUSTED_ORIGINS = [
+    'https://lighting-project-1.onrender.com',
+]
 
 
 # Application definition
